@@ -1,0 +1,9 @@
+*.mexa64
+*.mexmaci64
+*.eps
+.DS_Store
+save/*
+core/*
+core.zip
+data/misc/eli_walk
+data/misc/soccer_juggle
