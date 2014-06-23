@@ -32,9 +32,9 @@ The package of `mocgui.zip` contains the following files and folders:
 
 - `./addPath.m`: Adds the sub-directories into the path of Matlab.
 
-- `./mocGui.m`: The main implementation of the GUI interface.
+- `./mocgui.m`: The main implementation of the GUI interface.
 
-- `./mocGui.fig`: The Matlab fig file to save the window configuration.
+- `./mocgui.fig`: The Matlab fig file to save the window configuration.
 
 Copyright
 ==========
