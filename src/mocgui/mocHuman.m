@@ -1,4 +1,4 @@
-function CMU = cmuHuman
+function CMU = mocHuman
 % Load human label file for segmentation. Meanwhile, obtain the list of all the motion capture file.
 %
 % Output
@@ -9,53 +9,12 @@ function CMU = cmuHuman
 %
 % History
 %   create  -  Feng Zhou (zhfe99@gmail.com), 12-29-2008
-%   modify  -  Feng Zhou (zhfe99@gmail.com), 01-03-2012
+%   modify  -  Feng Zhou (zhfe99@gmail.com), 06-24-2014
 
-% specified in addPath.m
-global footpath;
-txtpath = [footpath '/data/cmu/cmu.txt'];
-matpath = [footpath '/data/cmu/cmu.mat'];
-
-% if mat existed, just load
-if exist(matpath, 'file')
-    CMU = matFld(matpath, 'CMU');
-    prInOut('cmuHuman', 'old');
-    return;
-end
-prIn('cmuHuman', 'new, %s', txtpath);
+prIn('mocHuman');
 
 % all subject
 CMU = getAllNames;
-
-% open text file
-fid = fopen(txtpath, 'rt');
-
-% line-by-line
-while ~feof(fid)
-    line = fgetl(fid);
-    parts = tokenise(line, ' ');
-
-    % skip empty line
-    if isempty(parts)
-        continue;
-    end
-
-    % parse one mocap
-    if length(parts) == 2
-        pno = parts{1};
-        trl = parts{2};
-        nm = ['S' pno '_' trl];
-
-        [seg, cnames] = cmuOne(fid);
-        CMU.(nm).seg = seg;
-        CMU.(nm).cnames = cnames;
-    else
-        error('grammar error');
-    end
-end
-
-% save
-save(matpath, 'CMU');
 
 prOut;
 

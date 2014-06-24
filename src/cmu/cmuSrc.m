@@ -18,7 +18,7 @@ function src = cmuSrc(sub, trl)
 %
 % History
 %   create   -  Feng Zhou (zhfe99@gmail.com), 12-29-2008
-%   modify   -  Feng Zhou (zhfe99@gmail.com), 05-18-2014
+%   modify   -  Feng Zhou (zhfe99@gmail.com), 06-24-2014
 
 % subject
 if ischar(sub)
@@ -43,11 +43,11 @@ nm2 = sprintf('S%s_%s', subNm, trlNm);
 prIn('cmuSrc', '%s', nm);
 
 % human label
-CMU = cmuHuman;
-if isfield(CMU, nm2)
-    src.seg = CMU.(nm2).seg;
-    src.cnms = CMU.(nm2).cnames;
-end
+% CMU = cmuHuman;
+% if isfield(CMU, nm2)
+%     src.seg = CMU.(nm2).seg;
+%     src.cnms = CMU.(nm2).cnames;
+% end
 
 % store
 src.dbe = 'cmu';

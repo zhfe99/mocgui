@@ -8,11 +8,10 @@ viewing motion capture data.
 Installation
 ============
 
-1. Download the code via `git clone https://github.com/zhfe99/mocgui` or from this [link](https://github.com/zhfe99/mocgui/archive/master.zip);
+1. Download the code via `git clone https://github.com/zhfe99/mocgui.git` or from this [link](https://github.com/zhfe99/mocgui/archive/master.zip);
 2. Set `mocgui/` as the current folder in Matlab;
-3. Run `make` in Matlab to compile all C++ files;
-4. Run `addPath` in Matlab to add sub-directories into the path of Matlab.
-5. Run `mocgui` in Matlab.
+3. Run `addPath` in Matlab to add sub-directories into the path of Matlab.
+4. Run `mocgui` in Matlab.
 
 
 Instructions
@@ -22,18 +21,20 @@ The package of `mocgui.zip` contains the following files and folders:
 
 - `./data`: This folder contains a subset of the [CMU Motion Capture dataset](http://mocap.cs.cmu.edu).
 
-- `./src`: This folder contains the main implementation of FGM as well
-       as other baselines.
+- `./src`: This folder contains the main implementation of the GUI interface.
 
 - `./lib`: This folder contains some necessary library functions.
 
-- `./make.m`: Matlab makefile for C++ code.
-
 - `./addPath.m`: Adds the sub-directories into the path of Matlab.
 
-- `./mocgui.m`: The main implementation of the GUI interface.
+- `./mocgui.m`: The interface function.
 
 - `./mocgui.fig`: The Matlab fig file to save the window configuration.
+
+FAQs
+====
+
+
 
 
 Copyright

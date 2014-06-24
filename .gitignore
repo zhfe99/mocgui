@@ -3,4 +3,3 @@
 *.eps
 .DS_Store
 save/*
-data/cmu/cmu.mat

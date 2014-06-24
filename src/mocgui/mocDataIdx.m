@@ -10,7 +10,7 @@ function data = mocDataIdx(dbe, pno)
 %
 % History
 %   create  -  Feng Zhou (zhfe99@gmail.com), 04-07-2009
-%   modify  -  Feng Zhou (zhfe99@gmail.com), 05-18-2014
+%   modify  -  Feng Zhou (zhfe99@gmail.com), 06-24-2014
 
 if nargin > 2
     error('too many parameters');
@@ -23,7 +23,7 @@ if nargin == 0
 end
 
 % all data
-CMU = cmuHuman;
+CMU = mocHuman;
 names = fieldnames(CMU);
 n = length(names);
 
@@ -61,7 +61,11 @@ if nargin == 1
     % sort
     dig = zeros(1, n);
     for i = 1 : n
-        dig(i) = atoi(data{i});
+        if strcmp(data{i}(1), 'S')
+            dig(i) = atoi(data{i}(2 : end));
+        else
+            dig(i) = atoi(data{i});
+        end
     end
     [dig, idx] = sort(dig);
     data = {data{idx}};

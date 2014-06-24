@@ -1,4 +1,4 @@
-function varargout = mocGui(varargin)
+function varargout = mocgui(varargin)
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;

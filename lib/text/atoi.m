@@ -1,4 +1,4 @@
-% function i = atoi(a)
+function i = atoiSlow(a)
 % String to integer
 %
 % Input
@@ -9,4 +9,6 @@
 %
 % History
 %   create  -  Feng Zhou (zhfe99@gmail.com), 01-29-2009
-%   modify  -  Feng Zhou (zhfe99@gmail.com), 10-09-2011
+%   modify  -  Feng Zhou (zhfe99@gmail.com), 06-24-2014
+
+i = round(str2num(a));
