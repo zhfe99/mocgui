@@ -33,8 +33,13 @@ The package of `mocgui.zip` contains the following files and folders:
 
 FAQs
 ====
+How to load more data?
 
-
+All the mocap data are located under `data/cmu`. In this package, I
+have put a folder `data/cmu/S02` containing all the sequences
+performed by subject S02. You can download more data on the website of
+the [CMU Motion Capture dataset](http://mocap.cs.cmu.edu) and put the files in a similar structure as the
+folder `data/cmu/S02`.
 
 
 Copyright
