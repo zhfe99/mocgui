@@ -1,8 +1,8 @@
 Introduction
 ============
 
-This page contains software and instructions for a GUI interface for
-viewing motion capture data.
+This page contains software and instructions for a [GUI interface](http://www.f-zhou.com/mocgui_code.html) for
+loading and playing the [CMU Motion Capture dataset](http://mocap.cs.cmu.edu).
 
 
 Installation
