@@ -16,20 +16,13 @@ motion capture data.
 # Instructions
 
 The package of `mocgui.zip` contains the following files and folders:
-
 - `./data`: This folder contains a subset of the [CMU Motion Capture dataset](http://mocap.cs.cmu.edu).
-
 - `./src`: This folder contains the main implementation of the GUI interface.
-
 - `./lib`: This folder contains some necessary library functions.
-
 - `./addPath.m`: Adds the sub-directories into the path of Matlab.
-
 - `./mocgui.m`: The interface function.
-
 - `./mocgui.fig`: The Matlab fig file to save the window configuration.
-
-- `./demoMoc.m`: A demo file for animating CMU motion capture data.
+- `./demoMoc.m`: A demo file for loading and visualizing motion capture data.
 
 
 # FAQs
