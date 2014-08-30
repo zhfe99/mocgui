@@ -19,7 +19,7 @@ wsMoc = cmuMoc(src, 'svL', 2); % '2' means it will automatically save the variab
                                % Next time 'wsMoc' will be loaded from disk to save time.
 
 %% animate the mocap as a movie
-% anMocap(wsMoc);
+anMocap(wsMoc);
 
 %% show one frame (eg., the 100-th frame) of the mocap
 % frame index
