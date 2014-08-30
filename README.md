@@ -33,22 +33,22 @@ The package of `mocgui.zip` contains the following files and folders:
 
 
 # FAQs
-### how to load more data?
+### How to load more data?
 - All the mocap data are located under `data/cmu`. In this package, I
   have put a folder `data/cmu/S02` containing all the sequences
   performed by subject S02. You can download more data from the website of
   the [CMU Motion Capture dataset](http://mocap.cs.cmu.edu) and put the files in a similar structure as the
   folder `data/cmu/S02`.
 
-### how to get the coordinate of a mocap data?
+### How to show one frame of a mocap data?
+- At the end of `demoMoc.m`, you can find an example of showing one frame of a mocap data.
+
+### How to get the coordinate of a mocap data?
 - The function `cmuMoc` creates a structure variable named `wsMoc`,
   which contains all the mocap data for one sequence. In particular,
   `wsMoc.QC` is a `3 x nJ x nF` matrix, containing the 3D coordinate
   of `nJ` joints of a `nF`-length motion capture data. You can check
   the code `demoMoc.m` for the example.
-
-### how to show one frame of a mocap data?
-- At the end of `demoMoc.m`, you can find an example of showing one frame of a mocap data.
 
 
 # Copyright
