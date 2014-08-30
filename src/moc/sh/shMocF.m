@@ -19,7 +19,7 @@ function ha = shMocF(QC, Conn, skel, varargin)
 %
 % History
 %   create   -  Feng Zhou (zhfe99@gmail.com), 12-29-2008
-%   modify   -  Feng Zhou (zhfe99@gmail.com), 06-17-2014
+%   modify   -  Feng Zhou (zhfe99@gmail.com), 07-10-2014
 
 % show option
 psSh(varargin);
@@ -94,6 +94,7 @@ if lnWid > 0
 end
 
 % plot neck as a large ball
+neckJ = 0;
 if ~isempty(skel)
     neckJ = strloc('upperneck', skel.tree, 'name');
     if neckJ == 0
@@ -102,7 +103,7 @@ if ~isempty(skel)
 end
 
 hNeck = [];
-if neckJ ~= 0 && nkSiz > 0
+if ~isempty(skel) && neckJ ~= 0 && nkSiz > 0
     if d == 3
         hNeck = plot3(QC(1, neckJ), QC(3, neckJ), QC(2, neckJ), ...
                       'o', 'MarkerFaceColor', cl, 'MarkerEdgeColor', cl, 'MarkerSize', nkSiz);

@@ -1,21 +1,19 @@
-Introduction
-============
+# Introduction
 
-This page contains software and instructions for a [GUI interface](http://www.f-zhou.com/mocgui_code.html) for
-loading and playing the [CMU Motion Capture dataset](http://mocap.cs.cmu.edu).
+This page contains software and instructions for
+[a GUI interface](http://www.f-zhou.com/mocgui_code.html) for viewing
+motion capture data.
 
 
-Installation
-============
+# Installation
 
 1. Download the code via `git clone https://github.com/zhfe99/mocgui.git` or from this [link](https://github.com/zhfe99/mocgui/archive/master.zip);
 2. Set `mocgui/` as the current folder in Matlab;
 3. Run `addPath` in Matlab to add sub-directories into the path of Matlab.
-4. Run `mocgui` in Matlab.
+4. Run `mocgui` or `demoMoc` in Matlab.
 
 
-Instructions
-============
+# Instructions
 
 The package of `mocgui.zip` contains the following files and folders:
 
@@ -31,20 +29,19 @@ The package of `mocgui.zip` contains the following files and folders:
 
 - `./mocgui.fig`: The Matlab fig file to save the window configuration.
 
-FAQs
-====
-How to load more data?
-
-All the mocap data are located under `data/cmu`. In this package, I
-have put a folder `data/cmu/S02` containing all the sequences
-performed by subject S02. You can download more data on the website of
-the [CMU Motion Capture dataset](http://mocap.cs.cmu.edu) and put the files in a similar structure as the
-folder `data/cmu/S02`.
+- `./demoMoc.m`: A demo file for animating CMU motion capture data.
 
 
-Copyright
-==========
+# FAQs
+### how to load more data?
+- All the mocap data are located under `data/cmu`. In this package, I
+  have put a folder `data/cmu/S02` containing all the sequences
+  performed by subject S02. You can download more data from the website of
+  the [CMU Motion Capture dataset](http://mocap.cs.cmu.edu) and put the files in a similar structure as the
+  folder `data/cmu/S02`.
 
+
+# Copyright
 This software is free for use in research projects. If you publish
 results obtained using this software, please use this citation.
 

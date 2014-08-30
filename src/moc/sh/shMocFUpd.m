@@ -7,7 +7,7 @@ function shMocFUpd(h, QC)
 %
 % History
 %   create   -  Feng Zhou (zhfe99@gmail.com), 12-29-2008
-%   modify   -  Feng Zhou (zhfe99@gmail.com), 01-24-2014
+%   modify   -  Feng Zhou (zhfe99@gmail.com), 07-12-2014
 
 % dimension
 d = size(QC, 1);
@@ -50,7 +50,7 @@ end
 
 % neck
 neckJ = h.neckJ;
-if neckJ ~= 0
+if neckJ ~= 0 && ~isempty(h.hNeck)
     if d == 3
         set(h.hNeck, 'XData', QC(1, neckJ), 'YData', QC(3, neckJ), 'ZData', QC(2, neckJ));
     else

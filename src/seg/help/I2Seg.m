@@ -6,10 +6,12 @@ function seg = I2Seg(I)
 %
 % Output
 %   seg     -  temporal segmentation
+%    s      -  starting position of each segment, 1 x (m + 1)
+%    G      -  label of each segment, k x m
 %
 % History
 %   create  -  Feng Zhou (zhfe99@gmail.com), 01-12-2009
-%   modify  -  Feng Zhou (zhfe99@gmail.com), 10-09-2011
+%   modify  -  Feng Zhou (zhfe99@gmail.com), 07-06-2014
 
 [k, n] = size(I);
 l0 = G2L(I);

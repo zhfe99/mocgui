@@ -1,12 +1,12 @@
 function value = ps(option, name, default, varargin)
 % Parse the parameter specified in a struct or in a cell array.
 %
-% Example1 (when option is a struct):
+% Example 1 (when option is a struct):
 %   input    -  option.lastname = 'zhou';
 %   call     -  value = ps(option, 'lastname', 'noname');
 %   output   -  value = 'zhou'
 %
-% Example2 (when option is a cell array):
+% Example 2 (when option is a cell array):
 %   input    -  option = {'lastname', 'zhou'};
 %   call     -  value = ps(option, 'lastname', 'noname');
 %   output   -  value = 'zhou'
@@ -22,7 +22,7 @@ function value = ps(option, name, default, varargin)
 %
 % History
 %   create   -  Feng Zhou (zhfe99@gmail.com), 02-13-2009
-%   modify   -  Feng Zhou (zhfe99@gmail.com), 10-09-2011
+%   modify   -  Feng Zhou (zhfe99@gmail.com), 07-09-2014
 
 if iscell(option)
     if isempty(option)

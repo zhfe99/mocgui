@@ -2,7 +2,7 @@ function h = shs(Xs, parMk, parAx, varargin)
 % Show point set.
 %
 % Input
-%   Xs      -  sequence set, 1 x m (cell), dim x ni
+%   Xs      -  point set, 1 x m (cell), dim x ni
 %   parMk   -  marker parameter
 %   parAx   -  axis parameter
 %   varargin
@@ -14,7 +14,7 @@ function h = shs(Xs, parMk, parAx, varargin)
 %
 % History
 %   create  -  Feng Zhou (zhfe99@gmail.com), 03-31-2009
-%   modify  -  Feng Zhou (zhfe99@gmail.com), 05-04-2013
+%   modify  -  Feng Zhou (zhfe99@gmail.com), 06-26-2014
 
 % show option
 psSh(varargin);

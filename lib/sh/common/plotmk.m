@@ -1,5 +1,5 @@
 function ha = plotmk(X, c, parMk)
-% Plot points belonging to one cluster in 2-D or 3-D.
+% Plot points of the same cluster in 2-D or 3-D.
 %
 % Input
 %   X        -  sample matrix, d (= 2 | 3) x n
@@ -14,7 +14,7 @@ function ha = plotmk(X, c, parMk)
 %     lns    -  line, {'-', '--', ':', '-.'}
 %     mks    -  makrer, {'o', 's', '^', 'd', '+', 'v', 'x', '*', 'p'}
 %     cls    -  color,  {[1 0 0], [0 0 1], [0 1 0], [1 0 1], [0 0 0], [0 1 1], [.3 .3 .3], [.5 .5 .5], [.7 .7 .7], [.1 .1 .1], [1 .8 0], [1, .4, .6]}
-%     lnWid  -  line width, {1}
+%     lnWid  -  line width, {0}
 %     mkSiz  -  marker size, {5}
 %     mkEg   -  marker edge, 'y' | {'n'}
 %     face   -  flag of showing face, {'y'} | 'n'
@@ -24,7 +24,7 @@ function ha = plotmk(X, c, parMk)
 %
 % History
 %   create   -  Feng Zhou (zhfe99@gmail.com), 11-19-2010
-%   modify   -  Feng Zhou (zhfe99@gmail.com), 05-09-2013
+%   modify   -  Feng Zhou (zhfe99@gmail.com), 06-26-2014
 
 % function parameter
 ln = ps(parMk, 'ln', []);
@@ -33,7 +33,7 @@ cl = ps(parMk, 'cl', []);
 lns = ps(parMk, 'lns', {'-', '--', ':', '-.'});
 mks = ps(parMk, 'mks', {'o', 's', '^', 'd', '+', 'x', 'v', '>', '*', 'p'});
 cls = ps(parMk, 'cls', {[1 0 0], [0 0 1], [0 1 0], [1 0 1], [0 0 0], [1 .5 0], [.7 .7 .7], [.1 .1 .1], [.4 .4 .7], [.3 .6 .8], [1 .8 0], [1, .4, .6]});
-lnWid = ps(parMk, 'lnWid', 1);
+lnWid = ps(parMk, 'lnWid', 0);
 mkSiz = ps(parMk, 'mkSiz', 5);
 mkEgWid = ps(parMk, 'mkEgWid', 0);
 mkEgCl = ps(parMk, 'mkEgCl', 'k');

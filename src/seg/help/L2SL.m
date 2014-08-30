@@ -2,8 +2,8 @@
 % Trace back to determine the segmentation.
 %
 % There are two implementations:
-%   Matlab version: acaBackSlow.m
-%   C++ version:    acaBack.cpp
+%   Matlab version: L2SLSlow.m
+%   C++ version:    L2SL.cpp
 %
 % Input
 %   k       -  #class
@@ -15,4 +15,4 @@
 %
 % History
 %   create  -  Feng Zhou (zhfe99@gmail.com), 07-28-2009
-%   modify  -  Feng Zhou (zhfe99@gmail.com), 10-09-2011
+%   modify  -  Feng Zhou (zhfe99@gmail.com), 08-04-2014

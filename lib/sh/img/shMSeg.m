@@ -2,15 +2,17 @@ function shMSeg(seg1, seg2, n1, n2, varargin)
 % Show the segmentation in 2-D matrix.
 %
 % Input
-%   seg1    -  1st segmentation
-%   seg2    -  2nd segmentation
+%   seg1     -  1st segmentation
+%   seg2     -  2nd segmentation
+%   n1       -  length
+%   n2       -  length
 %   varargin
 %     bdWid  -  line width (for boundary), {1}
 %     bdCl   -  line color (for boundary), {[.5 .5 1]}
 %
 % History
-%   create  -  Feng Zhou (zhfe99@gmail.com), 09-11-2011
-%   modify  -  Feng Zhou (zhfe99@gmail.com), 10-05-2012
+%   create   -  Feng Zhou (zhfe99@gmail.com), 09-11-2011
+%   modify   -  Feng Zhou (zhfe99@gmail.com), 07-06-2014
 
 % function option
 bdWid = ps(varargin, 'bdWid', 1);

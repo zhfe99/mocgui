@@ -9,13 +9,14 @@ function ha = shMocG(QC, varargin)
 %     vwAgl  -  view angle, {[15 30]}
 %     gnd    -  flag of showing underground, {'y'} | 'n'
 %     clGnd  -  color of underground, [0 0 0] + .5
+%     ij     -  flag of using "axis ij", {'y'} | 'n'
 %
 % Output
 %   ha       -  handler
 %
 % History
 %   create   -  Feng Zhou (zhfe99@gmail.com), 12-29-2008
-%   modify   -  Feng Zhou (zhfe99@gmail.com), 01-24-2014
+%   modify   -  Feng Zhou (zhfe99@gmail.com), 07-14-2014
 
 % show option
 psSh(varargin);
@@ -25,6 +26,7 @@ box0 = ps(varargin, 'box0', []);
 vwAgl = ps(varargin, 'vwAgl', [15 30]);
 isGnd = psY(varargin, 'gnd', 'y');
 clGnd = ps(varargin, 'clGnd', [0 0 0] + .8);
+isIJ = psY(varargin, 'ij', 'y');
 
 % dimension
 d = size(QC, 1);
@@ -47,7 +49,7 @@ ha.box = box;
 
 % axis
 hold on;
-if d == 3
+if d == 3 && isIJ
     axis ij;
 end
 grid off;
